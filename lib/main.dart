@@ -16,9 +16,7 @@ class MyApp extends StatelessWidget {
         title: 'Employee Management',
         theme: ThemeData(
           primarySwatch: Colors.blue,
-          visualDensity: VisualDensity.adaptivePlatformDensity,
-          // Custom theme for innovative UI
-          textTheme: TextTheme(
+          visualDensity: VisualDensity.adaptivePlatformDensity,          textTheme: TextTheme(
             displayLarge: TextStyle(
                 fontSize: 32,
                 fontWeight: FontWeight.bold,
@@ -35,6 +33,7 @@ class MyApp extends StatelessWidget {
           ),
         ),
         home: EmployeeListView(),
+        debugShowCheckedModeBanner: false,
       ),
     );
   }
